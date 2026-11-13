@@ -19,3 +19,4 @@ class WordsList():
                 self.save_words()
                 print("Word deleted")
                 return
+        print("Word not found")
