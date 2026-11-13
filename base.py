@@ -9,5 +9,13 @@ class WordsList():
 
     def add_word(self, word):
         self.words.append(word)
-        self.save_word()
+        self.save_words()
         print("New word is in your list now!!")
+
+    def remove_word(self, word):
+        for w in self.words:
+            if w.word == word:
+                self.words.remove(w)
+                self.save_words()
+                print("Word deleted")
+                return
